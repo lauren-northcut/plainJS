@@ -1,0 +1,40 @@
+$back: url("./mountain.jpeg");
+$place: center;
+$hide: hidden;
+$turn: url("./Turn.png");
+$your: url("./your.png");
+
+html {
+   body {
+   background-image: $back;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+}
+}
+
+.card {
+   .info { 
+      visibility: $hide;
+   }
+}
+
+#jum {
+   background-color: white;
+   text-align: $place;
+}
+
+
+.card {
+   width: 30rem;
+    height: 18rem;
+
+}
+
+#c1 {
+   background-image: $turn;
+}
+
+#c2 {
+   background-image: $your;
+}

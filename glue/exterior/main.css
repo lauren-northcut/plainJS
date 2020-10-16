@@ -1,0 +1,29 @@
+html body {
+  background-image: url("./mountain.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .info {
+  visibility: hidden;
+}
+
+#jum {
+  background-color: white;
+  text-align: center;
+}
+
+.card {
+  width: 30rem;
+  height: 18rem;
+}
+
+#c1 {
+  background-image: url("./Turn.png");
+}
+
+#c2 {
+  background-image: url("./your.png");
+}
+
+/*# sourceMappingURL=main.css.map */

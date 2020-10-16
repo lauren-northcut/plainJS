@@ -2,47 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- bootstrap CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./glue/exterior/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./glue/exterior/main.css.map"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./glue/exterior/build/main.css.map"
+    /></noscript>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla JavaScript</title>
+    <title>Document</title>
   </head>
   <body>
-    <nav>
-      <h2>Sticky nav</h2>
-    </nav>
-    <div class="jumbotron jumbotron-fluid section" id="one">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
-        </p>
+    <!-- jumbotron -->
+    <!-- Why the container? It allowed padding without me having to code it out myself -->
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid" id="jum">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">
+            This is a modified jumbotron that occupies the entire horizontal
+            space of its parent.
+          </p>
+        </div>
       </div>
     </div>
-    <hr class="my-8" />
-    <div class="jumbotron jumbotron-fluid section" id="two">
-      <h2>Sort The Songs</h2>
-      <div class="container" id="songsHere"></div>
-    </div>
-    <hr class="my-8" />
-    <div class="jumbotron jumbotron-fluid section" id="three">
-      <h2>Speech Synthesis</h2>
-    </div>
-    <hr class="my-8" />
-    <div class="jumbotron jumbotron-fluid section" id="three">
-      <h2>Sliding Images</h2>
-    </div>
-    <hr class="my-8" />
-    <div class="jumbotron jumbotron-fluid section" id="three">
-      <h2>Wack-A-Mole</h2>
-    </div>
+    <!-- the content -->
+    <section class="container">
+      <div class="row">
+        <!-- API CARD ONE -->
+        <div class="col-md-6" >
+          <div class="col mb-4">
+            <div class="card" id="c1">
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- API CARD TWO  -->
+
+        <div class="col-md-6">
+          <div class="col mb-4">
+            <div class="card"  id="c2" >
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- API CARD THREE -->
+        <div class="col-md-6">
+          <div class="col mb-4">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- API CARD FOUR -->
+        <div class="col-md-6">
+          <div class="col mb-4">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- API CARD FIVE -->
+        <div class="col-md-6">
+          <div class="col mb-4">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- API CARD SIX -->
+        <div class="col-md-6">
+          <div class="col mb-4">
+            <div class="card">
+              <!-- <img src="..." class="card-img-top" alt="..." /> -->
+              <div class="card-body info">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Script CDN -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -53,6 +156,5 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/one.js"></script>
   </body>
 </html>
